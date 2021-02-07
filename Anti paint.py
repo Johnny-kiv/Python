@@ -34,6 +34,5 @@ class Paint(Frame):
         root.geometry("800x600+300+300")
         app = Paint(root)
         root.mainloop()
-name="_main_"
-if name=="_main_":
-    main()
+    if _name_=="_main_":
+        main()
