@@ -1,6 +1,7 @@
 from tkinter import*
 import random
 win=Tk()
+win.title("bb")
 c=Canvas(win,width=800,height=650,bg="grey",cursor="pencil")
 c.pack()
 
