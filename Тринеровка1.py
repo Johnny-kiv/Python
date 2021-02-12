@@ -1,23 +1,21 @@
-#Это тренировка
-
+#Это тренировка]
 from tkinter import*
+def n():
+    fra1 = Frame(root, width=1000, height=100, bg="darkred")
+    fr = Text(root, width=100, height=10, wrap=WORD, bg="white")
+    fra1.pack()
+    fr.pack()
+    root.mainloop()
+
 root=Tk()
-m=Menu(root)
+m= Menu(root)
 root.config(menu=m)
 fm=Menu(m)
-def h(event):
-    print('Hello, world')
-def mat():
-    but1=Button(root)
-    but1["text"]="канкулятор"
-    but1.bind("<Button-1>",h )
-    but1.pack()
-    but1=Button(root)
-    but1["text"]="1 класс"
-    but1.bind("<Button-1>",h )
-    but1.pack()
-m.add_cascade(label='Учебники',menu=fm)
-fm.add_command(label='Математика',command=mat)
-fm.add_command(label='Математика',command=russ)
-
+m.add_cascade(label="файл",menu=fm)
+fm.add_cascade(label="Создать",command=n)
+fra1= Frame(root,width=1000,height=100,bg="darkred")
+fr=Text(root,width=100,height=10,wrap=WORD,bg="white")
+fra3= Frame(root,width=500,height=150,bg="darkblue",bd=20)
+fra1.pack()
+fr.pack()
 root.mainloop()
