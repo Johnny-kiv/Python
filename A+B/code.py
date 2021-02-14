@@ -1,0 +1,7 @@
+txt=open("input.txt","r")
+f=txt.read().split()
+g=int(f[0])+int(f[1])
+txt.close()
+txt2=open("outinput.txt","w")
+txt2.write(str(g))
+txt2.close()

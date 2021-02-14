@@ -10,5 +10,5 @@ while r:
         b=c-int(f)
         break
 txt2=open("outinput.txt","w")
-txt2.write(str(f)+str(c)+str(b))
+txt2.write(str(f)+str(c)+str(b) )
 txt2.close()
