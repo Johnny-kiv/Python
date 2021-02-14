@@ -1,12 +1,17 @@
 #Это напоминальщик 
 #версия 2
 #Автор: johnny-kiv  
+
+#Подключаем модули tkinter, time и дополнительный модуль messagebox
 from tkinter import*
+from tkinter import messagebox  
+import time
 root=Tk()
+#Подключаем виджет Canvas
 c=Canvas(root,bg="grey",width=800,height=600)
 c.pack()
 
-import time
+
 
 a2=int(input("Введите минуты работы: "))
 b2=int(input("Введите минуты отдыха: "))

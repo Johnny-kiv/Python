@@ -15,15 +15,13 @@ class Bown(object):
         win.bind('<Left>',l)
         win.bind('<Right>',p)
 kor=Bown()
-kor._init_()   
-class V(object):
-    def _init_(self):
-        a=random.randint(1,990)
-        r2=c.create_oval(a,50,a+50,100,fill="blue")
-        time.sleep(1)
-        c.coords(r2,a,602,a+50,652)
-        r1=1
+kor._init_()
+a=random.randint(1,990)
+r2=c.create_oval(a,50,a+50,100,fill="blue")
+class V(object):  
+    def n2(self):
+        c.move(r2,0,500)
 k=V()
-k._init_()   
+k.n2() 
 c.pack()
 win.mainloop()
