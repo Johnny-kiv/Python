@@ -13,8 +13,10 @@ c.pack()
 
 
 
-a2=int(input("Введите минуты работы: "))
-b2=int(input("Введите минуты отдыха: "))
+a2=IntVar()
+b2=IntVar()
+a2l=Label()
+b2l=Label()
 if a2==0:
     a4=20*60
 if b2==0:
