@@ -10,10 +10,17 @@
 # Выходные данные
 
 # В единственную строку выходного файла OUTPUT.TXT нужно вывести три числа, разделенных пробелами – количество журавликов, которые сделал каждый ребенок (Петя, Катя и Сережа).
+import random
 txtin=open("input.txt","r")
 filein=txtin.read()
+txtin.close()
 r=1
 while r:
-    a=random.randint(1,filein)
-    S_P=a/2
-        
+    a=random.randint(1,9)
+    S_P=int(a)/2
+    K=int(filein)-a
+    if S_P+S_P+K==filein:
+        break
+txtout = open("outinput.txt","w")
+txtout.write(S_P," ",K," ",S_P)
+txtout.close()
